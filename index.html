@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bookmark-landing-page</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<img class="logo-img" src="/images/logo-bookmark.svg" />
+
+			<button
+				class="mobile-nav-toggle"
+				aria-controls="nav-bar"
+				aria-expanded="false">
+				<span class="sr-only">Menu</span>
+			</button>
+
+			<nav id="nav-bar" data-visible="false" class="nav-bar">
+				<hr />
+				<li><a href="#">FEATURE</a></li>
+				<hr />
+				<li><a href="#">PRICING</a></li>
+				<hr />
+				<li><a href="#">CONTACT</a></li>
+				<hr />
+				<li class="login"><a href="#">LOGIN</a></li>
+
+				<div class="social-media">
+					<img src="images/icon-facebook.svg" alt="facebook logo" />
+
+					<img src="images/icon-twitter.svg" alt="twitter logo" />
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section class="book-mark">
+				<div class="hero">
+					<div class="hero-shape"></div>
+					<img src="images/illustration-hero.svg" alt="illustration-hero" />
+					<div></div>
+					
+				</div>
+				<div class="bookmark-txt">
+					<h1>A Simple Bookmark Manager</h1>
+					<p>
+						A clean and simple interface to organise your favourite
+						websites. Open a new browser tab and see your sites load
+						instantly. Try it for free.
+					</p>
+
+					<div class="bookmark-link">
+						<a href="#"><button>Get it on Chrome</button></a>
+						<a href="#"><button>Get it on Firefox</button></a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<script src="app.js"></script>
+	</body>
+</html>
