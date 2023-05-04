@@ -13,7 +13,7 @@ navToggle.addEventListener("click", () => {
 	}
 });
 
-var acc = document.getElementsByclassName("accordion");
+var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (let i = 0; i < acc.length; i++) {

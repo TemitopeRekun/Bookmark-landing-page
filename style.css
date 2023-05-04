@@ -354,7 +354,6 @@ hr {
 .active,
 .accordion:hover {
 	font-weight: 700;
-	color: hsl(238, 29%, 16%);
 }
 
 .panel p {
@@ -364,7 +363,7 @@ hr {
 .panel {
 	text-align: left;
 	padding: 0px 18px;
-	max-height: 0;
+	max-height: 0px;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
 }
