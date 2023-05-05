@@ -394,7 +394,7 @@ hr {
 }
 
 .contact {
-	margin: 2em;
+	margin-inline: 2em;
 	margin-top: 7rem;
 	padding-bottom: 7rem;
 	background-color: var(--Soft-Blue);
@@ -484,12 +484,29 @@ hr {
 	border: 1px solid var(--Soft-Red);
 }
 
-.footer-link{
+footer {
+	background-color: var(--Very-Dark-Blue);
+	margin-inline: 2rem;
+}
+
+.footer-link {
+	justify-content: center;
+	align-items: center;
 	display: flex;
 	flex-direction: row;
 	gap: 2rem;
 }
 
 .footer-nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	list-style: none;
+}
+
+.footer-nav a {
+	text-decoration: none;
+	color: white;
 
 }
