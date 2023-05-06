@@ -17,7 +17,7 @@
 
 body {
 	overflow-x: hidden;
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	margin-inline: 1em;
 	font-size: 13px;
@@ -156,21 +156,24 @@ hr {
 }
 
 .hero {
+	margin: 0;
 	position: relative;
 	z-index: -2;
 }
 
 .hero-img {
-	width: 100%;
+	width: 90%;
 	z-index: 10;
 }
 
 .hero-shape {
+	margin: 0;
+	overflow-x: hidden;
 	position: absolute;
-	width: 75%;
-	height: 300px;
+	width: 60%;
+	height: 200px;
 	background-color: var(--Soft-Blue);
-	right: -1em;
+	right: 0;
 	bottom: 0;
 	border-radius: 100px 0 0 100px;
 	z-index: -1;
@@ -183,23 +186,24 @@ hr {
 
 .bookmark-text {
 	text-align: center;
-	margin-top: 4em;
+	margin-top: 3em;
 }
 
 .bookmark-text h1 {
 	text-align: center;
-	font-size: 35px;
+	font-size: 25px;
 	margin: 1em;
 	line-height: 1.7em;
 }
 
 .bookmark-text p {
-	margin: 2em;
-	margin-inline: 4em;
+	margin: 1.5em;
+	margin-inline: 1.5em;
 	font-size: 18px;
 }
 
 .bookmark-link {
+	margin-inline: 1em;
 	display: flex;
 	gap: 1rem;
 	justify-content: center;
@@ -210,7 +214,7 @@ hr {
 .chrome {
 	background-color: var(--Soft-Blue);
 	color: white;
-	padding: 15px 30px;
+	padding: 17px 28px;
 	cursor: pointer;
 	border-radius: 8px;
 	border: none;
@@ -219,7 +223,7 @@ hr {
 
 .fire-fox {
 	color: var(--Grayish-Blue);
-	padding: 15px 30px;
+	padding: 17px 28px;
 	cursor: pointer;
 	border-radius: 8px;
 	border: none;
@@ -227,38 +231,39 @@ hr {
 }
 
 .features {
-	margin: 2em;
+	margin: 0.5em;
 	text-align: center;
-	margin-top: 8em;
+	margin-top: 3em;
 }
 
 .features h2 {
 	font-size: 25px;
+	margin: 0.5em;
 }
 
 .features p {
-	margin: 1em;
-	margin-inline: 2em;
+	margin: 0.5em;
+	margin-inline: 0.5em;
 }
 
 .browser {
+	background-color: purple;
 	text-align: center;
-	margin: 4em;
+	margin: 2em;
 }
 
 .browser h2 {
-	margin: 1em;
+	margin-top: 2em;
 	font-size: 25px;
+	padding-bottom: 0.5em;
 }
 
 .browser p {
-	margin: 2em;
-	margin-inline: 1em;
 	padding-bottom: 3em;
 }
 
 .browser-intro {
-	margin-top: 5em;
+	margin-top: 2em;
 	margin-bottom: 5em;
 	padding-bottom: 5em;
 	display: flex;
@@ -276,7 +281,7 @@ hr {
 }
 .browser-card {
 	border: 1px solid black;
-	width: 300px;
+	width: 280px;
 	border-radius: 14px;
 }
 
@@ -312,26 +317,20 @@ hr {
 
 .faq-text {
 	padding-bottom: 1rem;
-	margin: 2em;
 	text-align: center;
 	margin-inline: 2em;
 }
 
 .faq-text h2 {
 	font-size: 25px;
-	margin: 1rem;
-}
-
-.faq-text p {
-	margin: 1em;
-	margin-inline: 2.5em;
+	padding-bottom: 1em;
 }
 
 .text {
-	margin: 2em;
-	margin-top: 5em;
+	margin: 1em;
+	margin-top: 3em;
 	text-align: center;
-	margin-inline: 5em;
+	margin-inline: 1em;
 	margin-bottom: 5em;
 }
 
@@ -394,7 +393,6 @@ hr {
 }
 
 .contact {
-	margin-inline: 2em;
 	margin-top: 7rem;
 	padding-bottom: 7rem;
 	background-color: var(--Soft-Blue);
@@ -420,58 +418,46 @@ hr {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin: 2em;
 	margin-top: 3rem;
-
-	gap: 3rem;
+	gap: 1rem;
 }
 
 #email {
+	min-width: 300px;
 	font-size: 18px;
-	width: 350px;
 	padding: 14px 28px;
-	border-radius: 8px;
+	border-radius: 4px;
 	border: none;
+	margin: 0;
 }
 
 #email :focus {
 	border: none;
 }
 
-.error-cont {
-	position: relative;
-}
-
 #error {
 	font-size: 14px;
-	width: 350px;
 	letter-spacing: normal;
 	text-align: left;
 	font-style: italic;
-	position: absolute;
-	top: 35px;
-	left: -14px;
-	z-index: 65;
-	margin-right: auto;
 	border-radius: 0 0 6px 6px;
-	padding-top: 0;
-	padding-left: 1rem;
+	padding: 0;
+	margin: 0;
 	background-color: var(--Soft-Red);
 }
 
 #email.color {
-	border: 2px solid var(--Soft-Red);
-	/* content: url(images/icon-error.svg); */
+	border-radius: 8px;
+	border: 3px solid var(--Soft-Red);
 }
 
 .contact-link {
 	background-color: var(--Soft-Red);
 	color: white;
+	min-width: 300px;
 	font-size: 16px;
 	font-weight: 700;
-	width: 350px;
 	border: none;
-	display: inline-block;
 	padding: 14px 18px;
 	/* box-shadow: 0 5px 9px 1px hsl(223, 100%, 88%); */
 	border-radius: 4px;
@@ -486,7 +472,9 @@ hr {
 
 footer {
 	background-color: var(--Very-Dark-Blue);
-	margin-inline: 2rem;
+	height: 50px;
+	display: flex;
+	justify-content: center;
 }
 
 .footer-link {
@@ -508,5 +496,4 @@ footer {
 .footer-nav a {
 	text-decoration: none;
 	color: white;
-
 }
