@@ -43,6 +43,7 @@ function errorMessage() {
 	if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(message.value)) {
 		text = "";
 		message.className = "";
+		document.getElementById("error").className = "";
 	} else if (message.value == "") {
 		text = "Whoops, make sure its an email";
 		message.className = "color";
