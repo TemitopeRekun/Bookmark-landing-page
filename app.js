@@ -46,9 +46,11 @@ function errorMessage() {
 	} else if (message.value == "") {
 		text = "Whoops, make sure its an email";
 		message.className = "color";
+		document.getElementById("error").className = "color";
 	} else {
 		text = "Please provide a valid email address";
 		message.className = "color";
+		document.getElementById("error").className = "color";
 	}
 	document.getElementById("error").innerHTML = text;
 }
