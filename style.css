@@ -16,7 +16,6 @@
 }
 
 body {
-	background-color: pink;
 	overflow-x: hidden;
 	width: 100%;
 	height: 100vh;
@@ -43,6 +42,7 @@ p {
 	padding: 2rem;
 	height: 100px;
 	display: flex;
+	gap: 1rem;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -50,11 +50,9 @@ p {
 .logo-img {
 	height: 20px;
 	z-index: 1000;
-	fill: white;
 }
 
 .sr-only {
-	/* background-color: black; */
 	visibility: hidden;
 }
 
@@ -79,11 +77,20 @@ hr {
 	text-decoration: none;
 }
 
+.nav-bar a:hover {
+	color: var(--Soft-Red);
+}
+
 .login a {
 	background-color: var(--Soft-Red);
-	color: var(--Grayish-Blue);
+	color: white;
 	padding: 9px 30px;
 	border-radius: 4px;
+}
+
+.login a:hover {
+	background-color: transparent;
+	border: 1px solid var(--Soft-Red);
 }
 
 .social-media {
@@ -222,6 +229,12 @@ hr {
 	font-weight: bolder;
 }
 
+.chrome:hover {
+	background-color: transparent;
+	border: 2px solid var(--Soft-Blue);
+	color: var(--Soft-Blue);
+}
+
 .fire-fox {
 	color: var(--Grayish-Blue);
 	padding: 17px 28px;
@@ -229,6 +242,12 @@ hr {
 	border-radius: 8px;
 	border: none;
 	font-weight: bolder;
+}
+
+.fire-fox:hover {
+	background-color: transparent;
+	border: 2px solid var(--Very-Dark-Blue);
+	color: var(--Very-Dark-Blue);
 }
 
 .features {
@@ -246,6 +265,168 @@ hr {
 	margin: 0.5em;
 	margin-inline: 0.5em;
 }
+
+.tab {
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+	overflow: hidden;
+}
+
+.tabcontent {
+	margin-top: 5em;
+	display: flex;
+	flex-direction: column;
+}
+
+hr {
+	width: 60%;
+}
+
+.tab button {
+	cursor: pointer;
+	border: none;
+	padding: 25px 1px;
+	color: var(--Grayish-Blue);
+	transition: 0.1s ease-in;
+	outline: none;
+	background-color: transparent;
+}
+
+.tab button:hover {
+	color: var(--Soft-Red);
+}
+
+.tab button.active {
+	border-bottom: 2px solid var(--Soft-Red);
+}
+
+.hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: -2;
+	width: 100%;
+	height: 350px;
+}
+
+.hero-img {
+	width: 80%;
+	height: 80%;
+	object-fit: contain;
+}
+
+.hero-shape {
+	margin: 0;
+	overflow-x: hidden;
+	position: absolute;
+	width: 70%;
+	height: 200px;
+	background-color: var(--Soft-Blue);
+	left: 0;
+	bottom: 0;
+	border-radius: 0 100px 100px 0;
+	z-index: -1;
+}
+
+.tabcontent-text {
+	text-align: center;
+	margin-top: 3em;
+}
+
+.tabcontent-text h1 {
+	text-align: center;
+	font-size: 25px;
+	margin: 1em;
+	line-height: 1.7em;
+}
+
+.tabcontent-text p {
+	margin: 1.5em;
+	margin-inline: 1.5em;
+	font-size: 18px;
+}
+
+.tabcontent-link {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 8em;
+}
+
+.tabcontentchrome {
+	background-color: var(--Soft-Blue);
+	color: white;
+	padding: 10px 12px;
+	border-radius: 4px;
+	cursor: pointer;
+	border: none;
+	font-weight: bolder;
+}
+
+.tabcontentchrome:hover {
+	background-color: transparent;
+	border: 2px solid var(--Soft-Blue);
+	color: var(--Soft-Blue);
+}
+
+@media only screen and (min-width: 35em) {
+
+	hr{ 
+		display: none;
+	}
+	.tab {
+		flex-direction: row;
+		gap: 0rem;
+	}
+
+	.tab button {
+		padding: 25px 54px;
+		border-bottom: 1px solid grey;
+	}
+
+	.tabcontent {
+		display: flex;
+		flex-direction: row;
+		display: block;
+	}
+	.hero {
+		width: 100%;
+	}
+
+	.tabcontent-text {
+		width: 60%;
+		margin-inline: 3rem;
+		margin-left: -6rem;
+	}
+
+	.tabcontent-text p,
+	.tabcontent-text h1 {
+		text-align: left;
+	}
+
+	.tabcontent-link {
+		justify-content: flex-start;
+		margin-left: 2rem;
+	}
+
+	.chrome {
+		padding: 10px 12px;
+		border-radius: 4px;
+	}
+	.hero-shape {
+		width: 70%;
+		height: 250px;
+	}
+	.hero-img {
+		width: 400px;
+		height: 400px;
+	}
+}
+
 
 .browser {
 	text-align: center;
@@ -331,7 +512,6 @@ hr {
 	margin: 1em;
 	margin-top: 3em;
 	text-align: center;
-	margin-inline: 1em;
 	margin-bottom: 5em;
 }
 
@@ -364,6 +544,7 @@ hr {
 .active,
 .accordion:hover {
 	font-weight: 700;
+	color: var(--Soft-Red);
 }
 
 .panel p {
@@ -391,6 +572,13 @@ hr {
 	border: none;
 	color: white;
 	font-weight: bold;
+	cursor: pointer;
+}
+
+.faq-link:hover {
+	background-color: transparent;
+	border: 2px solid var(--Soft-Blue);
+	color: var(--Soft-Blue);
 }
 
 .contact {
@@ -429,8 +617,6 @@ hr {
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	/* width: 100%; */
-	background-color: purple;
 	height: 2rem;
 	z-index: 2;
 }
@@ -520,7 +706,7 @@ footer {
 }
 
 .footer-nav a {
-	font-size: 18px;
+	font-size: 16px;
 	text-decoration: none;
 	color: white;
 }

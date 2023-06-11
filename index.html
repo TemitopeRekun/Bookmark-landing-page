@@ -29,9 +29,13 @@
 				<li class="login"><a href="#">LOGIN</a></li>
 
 				<div class="social-media">
-					<a href="#"><img src="images/icon-facebook.svg" alt="facebook logo" /></a>
+					<a href="#"
+						><img src="images/icon-facebook.svg" alt="facebook logo"
+					/></a>
 
-					<a href="#"><img src="images/icon-twitter.svg" alt="twitter logo" /></a>
+					<a href="#"
+						><img src="images/icon-twitter.svg" alt="twitter logo"
+					/></a>
 				</div>
 			</nav>
 		</header>
@@ -44,7 +48,6 @@
 						class="hero-img"
 						src="images/illustration-hero.svg"
 						alt="illustration-hero" />
-					<div></div>
 				</div>
 				<div class="bookmark-text">
 					<h1>A Simple Bookmark Manager</h1>
@@ -74,6 +77,108 @@
 					you can access them on the go.
 				</p>
 			</div>
+
+			<section>
+				<!-- tab titles -->
+				<div class="tab">
+					<hr />
+
+					<button
+						class="tablinks"
+						onclick="openTab(event, 'Manager')"
+						id="defaultOpen">
+						Simple Bookmarking
+					</button>
+					<hr />
+
+					<button class="tablinks" onclick="openTab(event, 'Search')">
+						Speedy Searching
+					</button>
+
+					<hr />
+
+					<button class="tablinks" onclick="openTab(event, 'Share')">
+						Easy Sharing
+					</button>
+
+					<hr />
+				</div>
+
+				<!-- First tab content -->
+				<div id="Manager" class="tabcontent">
+					<div class="hero">
+						<div class="hero-shape"></div>
+						<img
+							class="hero-img"
+							src="images/illustration-features-tab-1.svg"
+							alt="illustration-hero" />
+					</div>
+					<div class="tabcontent-text">
+						<h1>A Simple Bookmark Manager</h1>
+						<p>
+							A clean and simple interface to organise your favourite
+							websites. Open a new browser tab and see your sites load
+							instantly. Try it for free.
+						</p>
+
+						<div class="tabcontent-link">
+							<a href="#"
+								><button class="tabcontentchrome">More Info</button></a
+							>
+						</div>
+					</div>
+				</div>
+
+				<!-- Second tab content -->
+				<div id="Search" class="tabcontent">
+					<div class="hero">
+						<div class="hero-shape"></div>
+						<img
+							class="hero-img"
+							src="images/illustration-features-tab-2.svg"
+							alt="illustration-hero" />
+					</div>
+					<div class="tabcontent-text">
+						<h1>Intelligent Search</h1>
+						<p>
+							Our powerful search feature will help you find saved sites
+							in no time at all. Noneed to trawl through all of your
+							bookmarks.
+						</p>
+
+						<div class="tabcontent-link">
+							<a href="#"
+								><button class="tabcontentchrome">More Info</button></a
+							>
+						</div>
+					</div>
+				</div>
+
+				<!-- Third tab content  -->
+				<div id="Share" class="tabcontent">
+					<div class="hero">
+						<div class="hero-shape"></div>
+						<img
+							class="hero-img"
+							src="images/illustration-features-tab-3.svg"
+							alt="illustration-hero" />
+					</div>
+					<div class="tabcontent-text">
+						<h1>Share your bookmarks</h1>
+						<p>
+							Easily share your bookmarks and collections with others.
+							Create a shareable link that you can send at the click of a
+							button.
+						</p>
+
+						<div class="tabcontent-link">
+							<a href="#"
+								><button class="tabcontentchrome">More Info</button></a
+							>
+						</div>
+					</div>
+				</div>
+			</section>
 
 			<section class="browser">
 				<div class="browser-text">
