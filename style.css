@@ -38,6 +38,7 @@ p {
 	line-height: 1.7em;
 }
 
+/* THE HEADER AND NAV BAR SECTION STARTS HERE */
 .header {
 	padding: 2rem;
 	height: 100px;
@@ -96,6 +97,8 @@ hr {
 .social-media {
 	display: none;
 }
+
+/* RESPONSIVE HEADER AND NAV BAR */
 
 @media screen and (max-width: 35em) {
 	.nav-bar {
@@ -163,6 +166,7 @@ hr {
 	}
 }
 
+/* =====> BOOKMARK SECTION <===== */
 .hero {
 	margin: 0;
 	position: relative;
@@ -181,9 +185,9 @@ hr {
 	width: 60%;
 	height: 200px;
 	background-color: var(--Soft-Blue);
-	right: 0;
+	left: 0;
 	bottom: 0;
-	border-radius: 100px 0 0 100px;
+	border-radius: 0 100px 100px 0;
 	z-index: -1;
 }
 
@@ -250,6 +254,44 @@ hr {
 	color: var(--Very-Dark-Blue);
 }
 
+/* RESPONSIVE BOOKMARK SECTION */
+
+@media screen and (min-width: 35em) {
+	.book-mark {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+	.hero-shape {
+		margin: 0;
+		overflow-x: hidden;
+		width: 60%;
+		height: 200px;
+		background-color: var(--Soft-Blue);
+		bottom: 0;
+		z-index: -1;
+		position: absolute;
+		right: 0;
+		border-radius: 100px 0px 0px 100px;
+		bottom: 0;
+	}
+
+	.bookmark-text {
+		width: 50%;
+		text-align: left;
+	}
+
+	.book-mark p {
+		margin-inline: 8rem;
+		margin-left: 3rem;
+	}
+
+	.book-mark h1 {
+		margin-inline: 3rem;
+		width: 260px;
+		text-align: left;
+	}
+}
+
 .features {
 	margin: 0.5em;
 	text-align: center;
@@ -265,6 +307,14 @@ hr {
 	margin: 0.5em;
 	margin-inline: 0.5em;
 }
+
+@media screen and (min-width: 35em) {
+	.features p {
+		margin-inline: 15rem;
+	}
+}
+
+/* THE TAB SECTION START HERE */
 
 .tab {
 	margin-top: 2rem;
@@ -304,7 +354,7 @@ hr {
 	border-bottom: 2px solid var(--Soft-Red);
 }
 
-.hero {
+.tab-hero {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -314,13 +364,13 @@ hr {
 	height: 350px;
 }
 
-.hero-img {
+.tab-hero-img {
 	width: 80%;
 	height: 80%;
 	object-fit: contain;
 }
 
-.hero-shape {
+.tab-hero-shape {
 	margin: 0;
 	overflow-x: hidden;
 	position: absolute;
@@ -373,9 +423,10 @@ hr {
 	color: var(--Soft-Blue);
 }
 
-@media only screen and (min-width: 35em) {
+/* THE RESPONSIVENESS OF THE TAB */
 
-	hr{ 
+@media only screen and (min-width: 35em) {
+	hr {
 		display: none;
 	}
 	.tab {
@@ -393,7 +444,7 @@ hr {
 		flex-direction: row;
 		display: block;
 	}
-	.hero {
+	.tab-hero {
 		width: 100%;
 	}
 
@@ -417,16 +468,15 @@ hr {
 		padding: 10px 12px;
 		border-radius: 4px;
 	}
-	.hero-shape {
+	.tab-hero-shape {
 		width: 70%;
 		height: 250px;
 	}
-	.hero-img {
+	.tab-hero-img {
 		width: 400px;
 		height: 400px;
 	}
 }
-
 
 .browser {
 	text-align: center;
@@ -482,8 +532,9 @@ hr {
 }
 
 .ext-link {
-	margin-block: 2em;
-	padding: 15px 30px;
+	margin-inline: 2em;
+	margin-block: 2rem;
+	padding: 12px 20px;
 	background-color: var(--Soft-Blue);
 	color: white;
 	border: none;
@@ -495,6 +546,25 @@ hr {
 	border: 1px solid var(--Soft-Blue);
 	background-color: transparent;
 	cursor: pointer;
+}
+
+@media only screen and (min-width: 35em) {
+	.excl {
+		margin-inline: 10rem;
+	}
+
+	.browser-intro {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.second {
+		margin-top: 7rem;
+	}
+
+	.third {
+		margin-top: 14rem;
+	}
 }
 
 .faq-text {
