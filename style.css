@@ -113,7 +113,7 @@ hr {
 		transition: transform 350ms ease-out;
 	}
 
-	.nav-bar [data-visible="true"] {
+	.nav-bar[data-visible="true"] {
 		transform: translateX(0%);
 	}
 
@@ -213,6 +213,7 @@ hr {
 }
 
 .book-mark {
+	overflow-x: hidden;
 	display: flex;
 	flex-direction: column;
 }
@@ -262,7 +263,7 @@ hr {
 
 .fire-fox {
 	color: var(--Grayish-Blue);
-	padding: 12px 12px;
+	padding: 17px 28px;
 	cursor: pointer;
 	border-radius: 5px;
 	border: none;
@@ -330,6 +331,10 @@ hr {
 		margin-inline: 3rem;
 		width: 260px;
 		text-align: left;
+	}
+
+	.fire-fox {
+		padding: 12px 12px;
 	}
 }
 
@@ -520,7 +525,6 @@ hr {
 
 .browser {
 	text-align: center;
-	margin: 2em;
 }
 
 .browser h2 {
@@ -543,17 +547,10 @@ hr {
 	flex-direction: column;
 	gap: 3rem;
 }
-
-.browser hr {
-	width: 100%;
-	position: relative;
-	border: none;
-	border-top: 5px dotted var(--Grayish-Blue);
-}
 .browser-card {
 	border: none;
 	box-shadow: 0 5px 9px 1px var(--Grayish-Blue);
-	width: 280px;
+	width: 250px;
 	border-radius: 14px;
 }
 
@@ -594,8 +591,11 @@ hr {
 	}
 
 	.browser-intro {
+		margin: 0;
+		width: 100%;
 		display: flex;
 		flex-direction: row;
+		justify-content: center;
 	}
 
 	.second {
