@@ -49,7 +49,7 @@ p {
 }
 
 .logo-img {
-	height: 20px;
+	height: 25px;
 	z-index: 1000;
 }
 
@@ -113,7 +113,7 @@ hr {
 		transition: transform 350ms ease-out;
 	}
 
-	.nav-bar[data-visible="true"] {
+	.nav-bar [data-visible="true"] {
 		transform: translateX(0%);
 	}
 
@@ -164,10 +164,31 @@ hr {
 		display: flex;
 		gap: 2rem;
 	}
+	.facebook-social {
+		content: url(images/icon-facebook.svg);
+		background-repeat: no-repeat;
+	}
+	.facebook-social:hover {
+		content: url(images/facebookhover.svg);
+		fill: red;
+		background-repeat: no-repeat;
+	}
+
+	.twitter-social {
+		content: url(images/icon-twitter.svg);
+		background-repeat: no-repeat;
+	}
+	.twitter-social:hover {
+		content: url(images/twitterhover.svg);
+		fill: red;
+		background-repeat: no-repeat;
+	}
 }
 
 /* =====> BOOKMARK SECTION <===== */
 .hero {
+	display: flex;
+	justify-content: center;
 	margin: 0;
 	position: relative;
 	z-index: -2;
@@ -241,9 +262,9 @@ hr {
 
 .fire-fox {
 	color: var(--Grayish-Blue);
-	padding: 17px 28px;
+	padding: 12px 12px;
 	cursor: pointer;
-	border-radius: 8px;
+	border-radius: 5px;
 	border: none;
 	font-weight: bolder;
 }
@@ -260,28 +281,48 @@ hr {
 	.book-mark {
 		display: flex;
 		flex-direction: row-reverse;
+		justify-content: center;
+		align-items: center;
 	}
+
+	.hero {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		width: 50%;
+		height: 500px;
+		padding: 0;
+		height: 300px;
+	}
+
+	.hero-img {
+		max-width: 90%;
+		margin: 0;
+		padding: 0;
+	}
+
 	.hero-shape {
 		margin: 0;
 		overflow-x: hidden;
 		width: 60%;
-		height: 200px;
+		height: 60%;
 		background-color: var(--Soft-Blue);
 		bottom: 0;
-		z-index: -1;
+		left: 40%;
 		position: absolute;
-		right: 0;
 		border-radius: 100px 0px 0px 100px;
-		bottom: 0;
+		z-index: -1;
 	}
 
 	.bookmark-text {
 		width: 50%;
 		text-align: left;
+		margin-inline: 5%;
 	}
 
 	.book-mark p {
-		margin-inline: 8rem;
+		margin-inline: 5rem;
 		margin-left: 3rem;
 	}
 
@@ -310,7 +351,7 @@ hr {
 
 @media screen and (min-width: 35em) {
 	.features p {
-		margin-inline: 15rem;
+		margin-inline: 25%;
 	}
 }
 
@@ -512,7 +553,7 @@ hr {
 }
 .browser-card {
 	border: none;
-	box-shadow: 0 5px 9px 1px hsl(223, 15%, 47%);
+	box-shadow: 0 5px 9px 1px var(--Grayish-Blue);
 	width: 280px;
 	border-radius: 14px;
 }
@@ -550,7 +591,7 @@ hr {
 
 @media only screen and (min-width: 35em) {
 	.excl {
-		margin-inline: 10rem;
+		margin-inline: 15%;
 	}
 
 	.browser-intro {
@@ -583,6 +624,11 @@ hr {
 	margin-top: 3em;
 	text-align: center;
 	margin-bottom: 5em;
+}
+@media only screen and (min-width: 35em) {
+	.text {
+		margin-inline: 17%;
+	}
 }
 
 .accordion {
@@ -693,13 +739,14 @@ hr {
 
 #email {
 	position: absolute;
-	min-width: 350px;
+	width: 350px;
 	font-size: 18px;
 	padding: 14px 28px;
 	border-radius: 8px;
 	border: none;
 	margin: 0;
 	z-index: 30;
+	align-self: center;
 }
 
 #error {
@@ -708,7 +755,7 @@ hr {
 
 #error.color {
 	display: block;
-	min-width: 350px;
+	width: 350px;
 	position: absolute;
 	font-size: 15px;
 	right: -11rem;
@@ -732,7 +779,7 @@ hr {
 .contact-link {
 	background-color: var(--Soft-Red);
 	color: white;
-	min-width: 350px;
+	width: 350px;
 	font-size: 16px;
 	font-weight: 700;
 	border: none;
@@ -747,15 +794,50 @@ hr {
 	border: 1px solid var(--Soft-Red);
 }
 
+@media only screen and (min-width: 35em) {
+	.news-letter {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 12rem;
+		width: 100%;
+	}
+
+	#email {
+		width: 380px;
+		margin-left: 3rem;
+	}
+
+	#error.color {
+		width: 380px;
+		right: -13.5rem;
+	}
+
+	.contact-link {
+		width: 120px;
+		padding: 14px 15px;
+		margin-right: -13rem;
+	}
+
+	.contact p {
+		padding-top: 5rem;
+	}
+}
+
 footer {
 	padding-inline: 1.5rem;
-	background-color: red;
-	height: 50px;
+	background-color: var(--Very-Dark-Blue);
+	height: 70px;
 	flex-direction: row;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	gap: 1rem;
+}
+
+.footer-logo {
+	content: url(images/footer-logo.svg);
 }
 
 .footer-link {
@@ -790,6 +872,24 @@ footer {
 	gap: 1rem;
 	justify-content: center;
 	align-items: center;
+}
+
+.facebook-social {
+	content: url(images/icon-facebook.svg);
+	background-repeat: no-repeat;
+}
+.facebook-social:hover {
+	content: url(images/facebookhover.svg);
+	background-repeat: no-repeat;
+}
+
+.twitter-social {
+	content: url(images/icon-twitter.svg);
+	background-repeat: no-repeat;
+}
+.twitter-social:hover {
+	content: url(images/twitterhover.svg);
+	background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 35em) {
