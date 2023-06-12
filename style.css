@@ -407,7 +407,6 @@ hr {
 
 .tab-hero-img {
 	width: 80%;
-	height: 80%;
 	object-fit: contain;
 }
 
@@ -416,7 +415,7 @@ hr {
 	overflow-x: hidden;
 	position: absolute;
 	width: 70%;
-	height: 200px;
+	height: 60%;
 	background-color: var(--Soft-Blue);
 	left: 0;
 	bottom: 0;
